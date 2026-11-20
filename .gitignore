@@ -1,0 +1,29 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# Python / Node (if tooling added later)
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+
+# Local scratch / generated
+*.log
+tmp/
+.tmp/
+dist/
+build/
+
+# 校验报告 / 分析文档不入库
+*report*.txt
+*_verify*.txt
+*_rerun*.txt
+对比分析*.md
+两份Skill*.md
+
+# Do not ignore skill content: SKILL.md, references/, examples/, platforms/ are the product.
