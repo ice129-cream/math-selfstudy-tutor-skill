@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>数学自学导师 · math-selfstudy-tutor</title>
+<style>
+:root{--bg:#0b1220;--card:#131c2f;--line:#243049;--txt:#e8eefc;--sub:#9fb0d0;--acc:#60a5fa;--acc2:#a78bfa;--gold:#fbbf24}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(1200px 600px at 15% -10%,#1e3a8a33,transparent),radial-gradient(1000px 500px at 100% 0%,#7c3aed22,transparent),var(--bg);color:var(--txt);font-family:'Segoe UI',-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;line-height:1.7;min-height:100vh}
+.wrap{max-width:960px;margin:0 auto;padding:56px 22px 80px}
+.hero{display:flex;gap:34px;align-items:center;flex-wrap:wrap;margin-bottom:46px}
+.hero img{width:132px;height:132px;filter:drop-shadow(0 12px 30px #0008)}
+.htext h1{font-size:40px;line-height:1.2;background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.htext .en{color:var(--sub);font-size:17px;font-weight:400;letter-spacing:1px;margin-top:6px}
+.tag{display:inline-block;margin-top:16px;padding:6px 14px;border:1px solid var(--line);border-radius:999px;color:var(--gold);font-size:13px;background:#fbbf240d}
+.lead{font-size:19px;color:var(--sub);margin-bottom:40px;max-width:760px}
+.lead b{color:var(--txt)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-bottom:44px}
+.card{background:linear-gradient(180deg,var(--card),#0f1724);border:1px solid var(--line);border-radius:16px;padding:24px;transition:.25s}
+.card:hover{border-color:var(--acc);transform:translateY(-3px);box-shadow:0 12px 34px #0006}
+.card h3{font-size:18px;margin-bottom:10px;color:#fff}
+.card .n{display:inline-flex;width:30px;height:30px;align-items:center;justify-content:center;background:#60a5fa22;color:var(--acc);border-radius:8px;margin-bottom:12px;font-weight:700}
+.card p{color:var(--sub);font-size:14px}
+.chain{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:12px;padding:22px 26px;margin-bottom:44px}
+.chain h3{color:var(--gold);margin-bottom:12px}
+.chain code{display:block;color:#cfe0ff;font-size:14px;line-height:2;word-break:break-word}
+.btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:50px}
+.btn{padding:12px 24px;border-radius:10px;text-decoration:none;font-weight:600;font-size:15px;transition:.2s}
+.btn.primary{background:linear-gradient(90deg,var(--acc),var(--acc2));color:#08101f}
+.btn.primary:hover{filter:brightness(1.12);transform:translateY(-2px)}
+.btn.ghost{border:1px solid var(--line);color:var(--txt)}
+.btn.ghost:hover{border-color:var(--acc);color:var(--acc)}
+footer{border-top:1px solid var(--line);padding-top:24px;color:#6b7c9e;font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+a{color:var(--acc)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <img src="logo.svg" alt="logo">
+    <div class="htext">
+      <h1>数学自学导师</h1>
+      <div class="en">math-selfstudy-tutor · 讲题陪练 / 逻辑校验 / 提问脚手架</div>
+      <span class="tag">专升本高数 · 线性代数 · 第一性原理自学体系</span>
+    </div>
+  </div>
+
+  <p class="lead">它不讲课、不给完整解析。它先<b>诊断你卡在哪一层认知</b>，再用追问、质疑和搭梯子，逼你自己走完 <b>做题 → 懂题 → 讲题 → 举一反三</b> 的四层闭环。终点不是听懂，是你脱离它也能讲清楚。</p>
+
+  <div class="grid">
+    <div class="card"><div class="n">1</div><h3>独立做题</h3><p>真题为母、结构性改编的探究题。不主动给提示，自己推到底。</p></div>
+    <div class="card"><div class="n">2</div><h3>做懂题</h3><p>不对答案，先扎本质：哪个条件必不可少？哪条定理的前提你没验？你默认了什么？</p></div>
+    <div class="card"><div class="n">3</div><h3>讲懂题</h3><p>你主讲，它倾听。讲完再集中拷问前提与边界，陪你重写到严谨。</p></div>
+    <div class="card"><div class="n">4</div><h3>举一反三</h3><p>自己改条件、构变式、预判结论变化，讲清底层逻辑哪里被改。</p></div>
+  </div>
+
+  <div class="chain">
+    <h3>宪法 · 十二问链（以「求真」为最高裁决）</h3>
+    <code>学习 → 自学 → 归纳总结 → 自我输出 → 表达重构 → 理解 → 反思 → 迭代 → 聚焦深耕 → 抓本质 → 提问质疑 → 独立思考 → 求真</code>
+  </div>
+
+  <div class="btns">
+    <a class="btn primary" href="https://github.com/hubeiewuhan-creator/math-selfstudy-tutor-skill">查看 GitHub 仓库</a>
+    <a class="btn ghost" href="https://github.com/hubeiewuhan-creator/math-selfstudy-tutor-skill#readme">使用文档</a>
+    <a class="btn ghost" href="https://github.com/hubeiewuhan-creator/diagnostic-study-coach-skill">综合升级版 →</a>
+  </div>
+
+  <footer>
+    <span>Markdown-only · DSH 原生 skill · 无隐藏记忆</span>
+    <span>MIT License · © 2026 hubeiewuhan-creator</span>
+  </footer>
+</div>
+</body>
+</html>
